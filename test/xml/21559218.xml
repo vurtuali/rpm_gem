@@ -1,0 +1,106 @@
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="In-Data-Review">
+        <PMID Version="1">21559218</PMID>
+        <DateCreated>
+            <Year>2011</Year>
+            <Month>05</Month>
+            <Day>11</Day>
+        </DateCreated>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2090-0597</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>2011</Volume>
+                    <PubDate>
+                        <Year>2011</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cardiology research and practice</Title>
+                <ISOAbbreviation>Cardiol Res Pract</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Right ventricular dysfunction and failure in chronic pressure overload.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>568095</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Right ventricular (RV) dysfunction is the main cause of death in pulmonary arterial hypertension (PAH). Our understanding of the pathophysiology of RV dysfunction is limited but improving. Methods to better diagnose RV dysfunction earlier and treatments specifically designed to minimize or reverse the remodeling process are likely to improve outcomes. We review the current understanding of RV dysfunction in chronic pressure overload and introduce some novel insights based on recent investigations into pathophysiology, diagnosis, and treatment.</AbstractText>
+            </Abstract>
+            <Affiliation>Cardiovascular Institute, University of Pittsburgh, Scaife Hall S-554, 200 Lothrop Street, Pittsburgh, PA 15213, USA.</Affiliation>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Simon</LastName>
+                    <ForeName>Marc A</ForeName>
+                    <Initials>MA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pinsky</LastName>
+                    <ForeName>Michael R</ForeName>
+                    <Initials>MR</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType>Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2011</Year>
+                <Month>03</Month>
+                <Day>23</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Egypt</Country>
+            <MedlineTA>Cardiol Res Pract</MedlineTA>
+            <NlmUniqueID>101516542</NlmUniqueID>
+            <ISSNLinking>2090-0597</ISSNLinking>
+        </MedlineJournalInfo>
+        <OtherID Source="NLM">PMC3087982</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2010</Year>
+                <Month>12</Month>
+                <Day>7</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2011</Year>
+                <Month>1</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="epublish">
+                <Year>2011</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2011</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2011</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="doi">10.4061/2011/568095</ArticleId>
+            <ArticleId IdType="pubmed">21559218</ArticleId>
+            <ArticleId IdType="pmc">PMC3087982</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
