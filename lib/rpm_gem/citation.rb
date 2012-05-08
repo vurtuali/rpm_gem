@@ -24,7 +24,7 @@ module RpmGem
     
     MONTHS = %w{Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec}
     
-    attr_reader :id, :xml
+    attr_reader :id
     
     def initialize id=nil
       @id = id
@@ -39,6 +39,14 @@ module RpmGem
     
     def xml_doc
       @xml ||= REXML::Document.new PubMedXMLFetcher.fetch_xml_for_id(@id)
+    end
+            
+    def xpath_map xpath
+      if xml_doc
+        return REXML::XPath.each(xml_doc, xpath).map {|x| x.text}
+      else
+        return nil
+      end
     end
     
     def month
@@ -56,29 +64,18 @@ module RpmGem
     end
     
     private
-    
+
     def self.define_fields
       XPATHS.each do |k,v|
         define_method k do
-          xpath_map v
+          x = xpath_map(v)
+          if  x.is_a?(Array) && (x.size < 2)
+            x[0]
+          else
+            x
+          end 
         end
       end
-    end
-        
-    def xpath_map xpath
-      if xml_doc
-        return cond_rem_sq_brackets(REXML::XPath.each(xml_doc, xpath).map {|x| x.text})
-      else
-        return nil
-      end
-    end
-    
-    def cond_rem_sq_brackets x
-      if  x.is_a?(Array) && (x.size < 2)
-        x[0]
-      else
-        x
-      end      
     end
     
     define_fields
