@@ -14,7 +14,7 @@ module RpmGem
       :volume =>  '//*/Journal/JournalIssue/Volume',
       :issue =>  '//*/Journal/JournalIssue/Issue',
       :pages => '//*/Pagination/MedlinePgn',
-      :article_title =>'//*/Article/ArticleTitle',
+      :q =>'//*/Article/ArticleTitle',
       :abstract_text => '//*/Abstract/AbstractText',
       :last_names => '//*/Author/LastName',
       :fore_names => '//*/Author/ForeName',
@@ -67,10 +67,18 @@ module RpmGem
     
     def xpath_map xpath
       if xml_doc
-        return REXML::XPath.each(xml_doc, xpath).map {|x| x.text}
+        return cond_rem_sq_brackets(REXML::XPath.each(xml_doc, xpath).map {|x| x.text})
       else
         return nil
       end
+    end
+    
+    def cond_rem_sq_brackets x
+      if  x.is_a?(Array) && (x.size < 2)
+        x[0]
+      else
+        x
+      end      
     end
     
     define_fields

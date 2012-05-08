@@ -8,7 +8,7 @@ class TestPubMedXMLFetcher < Test::Unit::TestCase
     end
     
     def test_fetch
-      xml = RpmGem::PubMedXMLFetcher.fetch_xml_for_id @id
+      assert RpmGem::PubMedXMLFetcher.fetch_xml_for_id @id
     end
       
 end
