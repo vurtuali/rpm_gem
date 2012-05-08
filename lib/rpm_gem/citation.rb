@@ -14,7 +14,7 @@ module RpmGem
       :volume =>  '//*/Journal/JournalIssue/Volume',
       :issue =>  '//*/Journal/JournalIssue/Issue',
       :pages => '//*/Pagination/MedlinePgn',
-      :q =>'//*/Article/ArticleTitle',
+      :article_title =>'//*/Article/ArticleTitle',
       :abstract_text => '//*/Abstract/AbstractText',
       :last_names => '//*/Author/LastName',
       :fore_names => '//*/Author/ForeName',
@@ -64,7 +64,7 @@ module RpmGem
         end
       end
     end
-    
+        
     def xpath_map xpath
       if xml_doc
         return cond_rem_sq_brackets(REXML::XPath.each(xml_doc, xpath).map {|x| x.text})
