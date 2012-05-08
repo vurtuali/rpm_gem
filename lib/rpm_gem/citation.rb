@@ -43,7 +43,7 @@ module RpmGem
     
     def month
       unless month_string.nil? || month_string.empty?
-        MONTHS.index(month_string.first) + 1
+        MONTHS.index(month_string) + 1
       end
     end
     

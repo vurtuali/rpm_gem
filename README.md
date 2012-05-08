@@ -3,15 +3,32 @@
 A very small gem to pull publication details from pubmed, via the ncbi.nlm.nih.gov's Entrez eutils service.
 Will fetch the xml document for a given pubmed id and provides handy attribute readers via REXML, ie only requires stlib.
 
-### Like how easy?
+It was extracted from a couple of projects, which needed to populate databases or autofill forms
 
-    c = RpmGem::Citation.new 12563742
-     => #<RpmGem::Citation:0x0000000291d988 @id=12563742> 
+### Easy Peasy?
+
+    c = RpmGem::Citation.new 1234567
+     => #<RpmGem::Citation:0x0000000291d988 @id=1234567> 
     c.article_title
-     => "[Dynamic changes in IL-4, IL-5 and IL-10 in liver and bone marrow of mice infected with Schistosoma japonicum]." 
+     => "The effect of castration and peroral estrogen therapy on some psychological functions." 
     c.journal_title
-      => "Zhongguo ji sheng chong xue yu ji sheng chong bing za zhi = Chinese journal of parasitology & parasitic diseases" 
+      => "Frontiers of hormone research" 
     c.year
-     => "1999" 
+     => "1975"
+     
+### Note
+    c = RpmGem::Citation.new 12563742
+     => #<RpmGem::Citation:0x0000000291d988 @id=1234567>
+    c.last_names
+     => ["Rauramo", "Lagerspetz", "Engblom", "Punnonen"]
+    c.fore_names
+     => ["L", "K", "P", "R"]
+    c.authors
+     => ["Rauramo L", "Lagerspetz K", "Engblom P", "Punnonen R"]
+     
+
+ 
+ 
+ 
 
 
