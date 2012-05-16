@@ -57,8 +57,12 @@ module RpmGem
     
     def authors
        authors = []
-       last_names.each_index do |i|
-         authors << "#{last_names[i]} #{initials[i]}"     
+       if last_names.kind_of? Array
+         last_names.each_index do |i|
+           authors << "#{last_names[i]} #{initials[i]}"     
+         end
+       else
+         authors << "#{last_names} #{initials}"
        end
        authors
     end
